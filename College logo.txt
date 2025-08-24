@@ -1,0 +1,1 @@
+<link rel="icon" type="style.css" href="https://siesce.edu.in/images/logo_50x50.png">

@@ -1,0 +1,91 @@
+:root{
+  --brand:#f26d21;
+  --text:#222;
+  --light:#fff;
+}
+body{ color:var(--text); }
+
+.navbar{
+  background:var(--brand);
+}
+.navbar .nav-link, .navbar .navbar-brand{
+  color:var(--light) !important;
+}
+.navbar .nav-link.active{
+  font-weight:700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.page-hero{
+  background: var(--brand);
+  color: var(--light);
+  padding: 48px 0;
+}
+.page-hero .breadcrumb a{ color:#fff; opacity:.9; }
+.page-hero .breadcrumb .active{ color:#fff; }
+
+.card-accent{
+  border-left:6px solid var(--brand);
+}
+
+.btn-brand{
+  background:var(--brand);
+  color:#fff;
+  border:none;
+}
+.btn-brand:hover,.btn-brand:focus{ opacity:.9; color:#fff; }
+
+.footer{
+  background:#111;
+  color:#ddd;
+  padding:24px 0;
+}
+.footer a{ color:#fff; text-decoration:none; }
+.footer small{ opacity:.8; }
+
+/* Fade-in reusable */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #f26d21;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.8s step-end infinite;
+  display: inline-block;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f26d21 }
+}
+
+/* Highlight card hover */
+.highlight-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border-left: 4px solid transparent;
+}
+.highlight-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(242, 109, 33, 0.4);
+  border-left: 4px solid #f26d21;
+}
+
+.btn-brand1{
+    background:#f26d21
+}
+.btn-brand1:hover{
+    background: #ffffff;
+}
